@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 10px;
+}
+
+h2 {
+  background-color: aquamarine;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+h3 {
+  display: flex;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: blueviolet;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  margin: 0 auto 20px;
+}
+
+h4 {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+/* Tab Bar Styling */
+.tab-bar {
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.tab {
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+background-color: #575757;
+border-radius: 5px;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Container for Content and Sidebars */
+.container {
+  display: flex;
+  flex: 1; /* Makes the container expand to fill available vertical space */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 20%; /* Adjust width as needed */
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.right-sidebar {
+  width: 20%; /* Adjust width as needed */
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.sidebar ul, .right-sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li, .right-sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a, .right-sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover, .right-sidebar ul li a:hover {
+  color: #007BFF;
+}
+
+/* Content Styling */
+.content {
+  flex: 1; /* Main content takes remaining space */
+  padding: 20px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .sidebar, .right-sidebar {
+      width: 100%; /* Sidebars stack on top of content */
+      border: none;
+  }
+}

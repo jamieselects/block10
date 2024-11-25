@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="block08.js"></script>
+  <title>Holy Grail Flex</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('navbar').innerHTML = html;
+        });
+    </script>
+    <script src="javascript.js"></script>
+  </header>
+
+  <div class="container">
+    <!-- Side Bar -->
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <h2> Main Conent</h2>
+      <p>
+        Lorem ipsum odor amet, consectetuer adipiscing elit. Quis commodo tempor sollicitudin rhoncus posuere rutrum
+        phasellus. Vulputate donec hac suspendisse magna bibendum lacinia. Turpis lacus est hac; sem senectus eleifend
+        mattis. Massa cubilia sapien facilisis congue cursus? Ex nec pellentesque eleifend imperdiet ultricies
+        venenatis. Platea interdum velit dignissim consectetur egestas aliquam himenaeos. Aridiculus eget laoreet augue
+        maximus nulla interdum egestas. Dignissim congue torquent sociosqu sollicitudin dis mi sociosqu amet vivamus.
+
+        Eleifend libero iaculis senectus habitasse, torquent sapien dictumst dictumst. Lorem curabitur vulputate id
+        taciti proin. Risus vitae velit platea fringilla eget erat. Nisl hac platea eros ullamcorper donec ultrices
+        accumsan. Cursus egestas vel blandit tellus dignissim magna. Senectus dignissim est dapibus quam nostra sapien
+        sem congue. Erat rhoncus litora a auctor dis senectus? Elementum ante blandit, vestibulum faucibus eleifend nisl
+        gravida integer ornare. Ultrices cursus tincidunt luctus erat nascetur rutrum praesent netus?
+
+        Porta sagittis nascetur erat litora metus! Arcu phasellus platea vel torquent himenaeos parturient nisi. Vivamus
+        curabitur neque consectetur ut tempor felis vulputate. Praesent tempus neque parturient class id luctus litora
+        cubilia nam. Aptent gravida lacus; orci maximus sollicitudin potenti habitasse. Curabitur lacinia suspendisse
+        metus accumsan ipsum augue rhoncus? Lacinia maximus placerat facilisis sollicitudin donec commodo. Congue aenean
+        placerat sodales odio maximus mauris est facilisis risus.
+
+        Dictumst pharetra in conubia egestas ultricies. Accumsan nunc nec enim laoreet, adipiscing enim sollicitudin.
+        Pharetra parturient integer euismod; accumsan commodo sapien. Porta lorem tortor non mus feugiat ad egestas
+        auctor. Fames habitant egestas viverra, malesuada maximus ipsum. Cursus quam nostra metus cubilia tempus egestas
+        fames. Dapibus quam torquent feugiat, quisque sapien primis leo. Eleifend metus sollicitudin lacus mauris
+        rhoncus rutrum nullam platea diam. Fusce id porta venenatis orci laoreet pellentesque suscipit? Magna justo
+        rutrum cursus elit magna.
+
+        Lacus molestie malesuada natoque sodales, semper tristique himenaeos. Eleifend ad molestie litora facilisi netus
+        imperdiet vitae habitant! Fusce cursus velit hendrerit per accumsan euismod gravida. Sollicitudin sodales
+        facilisi rhoncus diam conubia conubia iaculis magnis. Euismod est ex ullamcorper quisque eros semper amet. Hac
+        turpis ornare congue euismod tortor eget vestibulum hac posuere. At vitae magnis tellus sed dictumst consectetur
+        nisl blandit. Ornare facilisis facilisis fermentum nullam augue lacinia. At mattis praesent placerat aliquam
+        ultrices pretium ultricies sollicitudin. Ultricies semper per efficitur facilisis justo turpis nunc.
+      </p>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+      <h2>Right Side bar</h2>
+      <p>
+        Entering side bar content here. Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae auctor varius duis
+        maecenas ipsum lacus. Elementum inceptos proin ex luctus facilisi congue tempor efficitur nam. Montes curabitur
+        malesuada purus facilisi; efficitur netus quis elementum. Aenean arcu euismod eu quis ultricies, facilisi
+        senectus nulla consectetur.
+      </p>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Jamie Selects</p>
+  </footer>
+</body>
+</html>
